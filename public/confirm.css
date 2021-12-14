@@ -1,0 +1,48 @@
+body{
+    padding-top: 0;
+    background: white;
+    font-weight: 400;
+    font-family: helvetica;
+}
+
+nav{
+    background: url("/img/background.jpg");
+}
+
+nav img{
+    width: 50px;
+}
+
+main{
+    margin: auto 10%;
+    flex-direction: column;
+    align-content: center;
+}
+
+.left{
+    margin-right: 40px;
+}
+
+section{
+    width: 45%;
+    float: left;
+    text-align: justify;
+}
+
+h2{
+    font-size: 1.5em;
+    color: #B990F3;
+    font-weight: 700;
+    width: 100%;
+}
+
+p, span{
+    font-size: 20px;
+}
+
+.friends{
+    display: block;
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+}

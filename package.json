@@ -1,0 +1,58 @@
+{
+  "name": "authentication",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "*",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.4.3",
+    "cron": "^1.8.2",
+    "dotenv": "^10.0.0",
+    "dotenv-safe": "^8.2.0",
+    "ejs": "~2.5.2",
+    "express": "^4.17.1",
+    "express-session": "^1.15.6",
+    "fetch": "^1.1.0",
+    "lodash": "^4.17.20",
+    "lowdb": "^3.0.0",
+    "method-override": "~2.3.6",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "mongodb": "^3.3.4",
+    "mongoose": "^5.12.1",
+    "morgan": "^1.9.1",
+    "mpath": ">=0.5.1",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.15",
+    "passport": "~0.3.2",
+    "passport-facebook": "~2.1.1",
+    "passport-google-oauth": "~1.0.0",
+    "passport-local": "~1.0.0",
+    "passport-twitter": "^0.1.5",
+    "twilio": "^3.71.2",
+    "twilio-cli": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roxanalemus/calendami.git"
+  },
+  "author": "Roxana Lemus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roxanalemus/calendami/issues"
+  },
+  "homepage": "https://github.com/roxanalemus/calendami#readme"
+}

@@ -1,0 +1,38 @@
+body{
+    background: url()
+}
+
+main{
+    background-color: white;
+}
+
+
+nav{
+    background-image: url("img/background.jpg");
+}
+.img-thumbnail {
+    display: block;
+    max-width: 4%;
+    height: auto;
+  }
+
+.hello{
+    margin-bottom: 60px;
+}
+
+.upcoming{
+    margin-bottom: 40px;
+}
+
+button{
+    border-radius: 8px;
+    border: white;
+    background-color: rgba(157,104,249,1);
+}
+
+
+.btn btn-outline-success{
+    color: white;
+    border: rgba(157,104,249,1);
+    background: white;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <title>Calendami</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+
+		<div class="container-fluid">
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+					  <img src="/img/friendship-day-1.png">
+          </li>
+          
+          <li class="nav-item">
+						<a class="nav-link" href="/profile">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/calendar" class="nav-link">All Events</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/logout" class="nav-link">Logout</a>
+					</li>
+			
+				</ul>
+
+				<form class="d-flex" method="get" action="/search">
+					<button class="btn btn-outline-success " type="submit">Search</button>
+					<input name="search" class="form-control me-2" type="search" placeholder="Friend Search" aria-label="Search">
+				</form>
+			</div>
+		</div>
+	</nav>
+
+  <!-- Vertical Timeline (adapted code from: https://codepen.io/htmlcodex/pen/KKVpdNK ) -->
+  <section id="conference-timeline">
+    <div class="timeline-start">Start</div>
+    <div class="conference-center-line"></div>
+    <div class="conference-timeline-content">
+      <% for(var i=0; i<entries.length; i++) {%>
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="<%= i % 2 === 0 ? "content-left-container" : "content-right-container" %>">
+          <div class="content-left">
+            <h2><%= entries[i].name %><span class="article-number"></span></h2>
+
+          </div>
+          <span class="timeline-author"><button name="deleteEvent" class="deleteEvent" data-value="<%= entries[i]._id %>">Delete Event</button></span>
+        </div>
+
+        <div class="meta-date">
+          <span class="date"><span><%= entries[i].time.toString().split(" ")[2] %></span></span>
+          <span class="month"><span><%= entries[i].time.toString().split(" ")[1] %></span></span>
+        </div>
+      </div>
+      <!-- // Article -->
+      <% } %>
+      <!-- // Article -->
+    </div>
+    <div class="timeline-end">End</div>
+  </section>
+  <!-- // Vertical Timeline -->
+ 
+    <script src="calendar.js"></script>
+  </body>
+  </html>
+
